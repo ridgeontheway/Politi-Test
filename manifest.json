@@ -1,0 +1,12 @@
+{
+  "name": "politi-test",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Chrome extension that allows you to test your political ideology.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+
+}
