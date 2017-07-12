@@ -3,6 +3,9 @@
   "version": "1.0",
   "manifest_version": 2,
   "description": "Chrome extension that allows you to test your political ideology.",
+  "browser_action": {
+  "default_popup": "popup.html"
+  },
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
