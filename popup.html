@@ -13,20 +13,32 @@
         width: 350px;
         min-height: 150px;
         max-height: 550px;
+        background-color: blue;
+      }
+      .values{
+        background-color: inherit;
+        width: 100%;
+        float: left;
+      }
+      .clicker{
+        color: white;
+        background-color: inherit;
+        text-align: center;
+        text-decoration: none;
       }
     </style>
   <script src="contentScript.js"></script>
   </head>
   <body>
-    <div class="popUpDiv">
-      <div class="8Values">
-        <a href="#" id="8valuesCLick"><h4>8values</h4></a>
+    <div class="popUpDiv" id="test">
+      <div class="values">
+        <a href="#" id="8valuesCLick" class="clicker"><h4>8values</h4></a>
       </div>
       <iframe id="8iframe" target="" width="0px" height="0px" frameborder="0">this doesnt work lol </iframe>
-      <div class="Spekr">
-      <h4>Sprkr<h4>
+      <div class="values">
+        <a href="#" id="spekrValuesClick" class="clicker"><h4>Sprkr</h4></a>
       </div>
-      <iframe src="http://spekr.org/" target="_parent" width="100%" height="100%" frameborder="0">this doesnt work lol </iframe>
+      <iframe id="spekrIframe" target="" width="0px" height="0px" frameborder="0">this doesnt work lol </iframe>
     </div>
   </body>
 </html>
