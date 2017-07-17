@@ -17,9 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById("popUpDiv").style.width="500px";
         document.getElementById("popUpDiv").style.height="580px";
 
-        document.getElementById("spekrIframe").style.height="100%";
+        document.getElementById("spekrIframe").style.height="580px";
         document.getElementById("spekrIframe").style.width="100%";
-        document.getElementById("spekrIframe").style.position="absolute";
 
         document.getElementById("spekrIframe").target="_parent";
         document.getElementById("spekrIframe").src='http://spekr.org/';
