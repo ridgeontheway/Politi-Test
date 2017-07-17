@@ -10,18 +10,48 @@
         font-size: 13px;
       }
       .popUpDiv{
-        width: 350px;
+        width: auto;
+        height: auto;
+        min-width: 350px;
         min-height: 150px;
-        max-height: 550px;
+        background-color: blue;
+      }
+      .values{
+        background-color: inherit;
+        width: 100%;
+        float: left;
+      }
+      .clicker{
+        color: white;
+        background-color: inherit;
+        text-align: center;
+        text-decoration: none;
+      }
+      #_8iframe {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        overflow-y: hidden;
+      }
+      #spekrIframe {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        overflow-y: hidden;
       }
     </style>
+  <script src="contentScript.js"></script>
   </head>
   <body>
-    <div class="popUpDiv">
-      <h4>8values</h4>
-      <iframe src="https://8values.github.io/instructions.html" target="_parent" width="100%" height="100%" frameborder="0">this doesnt work lol </iframe>
-      <h4>Sprkr<h4>
-      <iframe src="http://spekr.org/" target="_parent" width="100%" height="100%" frameborder="0">this doesnt work lol </iframe>
+    <div class="popUpDiv" id="popUpDiv">
+      <div class="values">
+        <a href="#" id="8valuesCLick" class="clicker"><h4>8values</h4></a>
+      </div>
+      <iframe id="_8iframe" frameborder="0">this doesnt work lol </iframe>
+      <div class="values">
+        <a href="#" id="spekrValuesClick" class="clicker"><h4>Sprkr</h4></a>
+      </div>
+      <iframe id="spekrIframe" frameborder="0">this doesnt work lol </iframe>
     </div>
   </body>
 </html>
