@@ -8,7 +8,23 @@
         border-radius: 5px;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 13px;
-
+      }
+      img{
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+      }
+      p{
+        display: inline-block;
+        padding: 2px;
+      }
+      a{
+        display: inline-block;
+        padding: 2px
+      }
+      h4{
+        display: inline-block;
+        padding: 2px
       }
       .popUpDiv{
         width: auto;
@@ -20,13 +36,11 @@
       .values{
         background-color: inherit;
         width: 100%;
-        float: left;
+        height: 100%;
       }
       .clicker{
         color: white;
         background-color: inherit;
-        text-align: center;
-        text-decoration: none;
       }
       #_8iframe {
         width: 0px;
@@ -44,12 +58,15 @@
   <script src="contentScript.js"></script>
   </head>
   <body>
-    <div class="popUpDiv" id="popUpDiv" >
+    <div class="popUpDiv" id="popUpDiv">
       <div class="values">
-        <a href="#" id="8valuesCLick" class="clicker"><h4>8values</h4></a>
+          <img src="/icons/_8values.png"></img>
+          <span><a href="#" id="8valuesCLick" class="clicker"><h4>8values</h4></a></span>
       </div>
+      <br>
       <iframe id="_8iframe" frameborder="0">this doesnt work lol </iframe>
       <div class="values">
+        <img src="/icons/spekr.png"></img>
         <a href="#" id="spekrValuesClick" class="clicker"><h4>Spekr</h4></a>
       </div>
       <iframe id="spekrIframe" frameborder="0">this doesnt work lol </iframe>
