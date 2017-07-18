@@ -12,9 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         document.getElementById("_8iframe").style.width="100%";
         document.getElementById("_8iframe").style.height="580px";
-
-        document.getElementById("_8iframe").style.WebkitTransform = 'scale(1)';
-
       });
 
       document.getElementById("spekrValuesClick").addEventListener("click", function(){

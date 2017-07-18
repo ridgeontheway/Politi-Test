@@ -4,28 +4,45 @@
     <meta charset="utf-8"/>
     <style type="text/css">
       body{
-        margin: 0px;
-        padding: 0px;
+        margin: 0px !important;
+        border-radius: 5px;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 13px;
+      }
+      img{
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+        display: inline;
+      }
+      a{
+        display: inline-block;
+        padding: 2px;
+      }
+      h4{
+        display: inline-block;
+        padding: 2px;
+      }
+      .test{
+        display: table;
+        margin-right: auto;
+        margin-left: auto;
       }
       .popUpDiv{
         width: auto;
         height: auto;
         min-width: 350px;
-        min-height: 150px;
+        min-height: 100px;
         background-color: blue;
       }
       .values{
         background-color: inherit;
         width: 100%;
-        float: left;
+        height: 100%;
       }
       .clicker{
         color: white;
         background-color: inherit;
-        text-align: center;
-        text-decoration: none;
       }
       #_8iframe {
         width: 0px;
@@ -45,11 +62,17 @@
   <body>
     <div class="popUpDiv" id="popUpDiv">
       <div class="values">
-        <a href="#" id="8valuesCLick" class="clicker"><h4>8values</h4></a>
+        <div class="test">
+          <img src="/icons/_8values.png"></img>
+          <span><a href="#" id="8valuesCLick" class="clicker"><h4>8Values</h4></a></span>
+        </div>
       </div>
       <iframe id="_8iframe" frameborder="0">this doesnt work lol </iframe>
       <div class="values">
-        <a href="#" id="spekrValuesClick" class="clicker"><h4>Sprkr</h4></a>
+        <div class="test">
+          <img src="/icons/spekr.png" id="testing"></img>
+          <a href="#" id="spekrValuesClick" class="clicker"><h4>Spekr</h4></a>
+        </div>
       </div>
       <iframe id="spekrIframe" frameborder="0">this doesnt work lol </iframe>
     </div>
