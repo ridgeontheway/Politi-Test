@@ -10,8 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById("_8iframe").src='https://8values.github.io/quiz.html';
         document.getElementById("_8iframe").target="_parent";
 
+        document.getElementById("_8iframe").style.visibility="visible";
         document.getElementById("_8iframe").style.width="100%";
         document.getElementById("_8iframe").style.height="580px";
+        document.getElementById("_8iframe").style.height="580px";
+
+        document.getElementById("bar").style.visibility="visible";
       });
 
       document.getElementById("spekrValuesClick").addEventListener("click", function(){
