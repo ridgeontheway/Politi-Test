@@ -30,5 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         document.getElementById("spekrIframe").style.height="580px";
         document.getElementById("spekrIframe").style.width="100%";
+
+        document.getElementById("bar").style.visibility="visible";
       });
 });
