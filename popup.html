@@ -64,11 +64,97 @@
         position: absolute;
         overflow-y: hidden;
       }
+      /* makes sure that the tooltip is where is should be */
+      [tooltip]{
+        position: relative;
+      }
+      /* setting common attributes to the before and after pieces */
+      [tooltip]::before,
+      [tooltip]::after {
+        line-height: 1;
+        user-select: none;
+        pointer-events: none;
+        position: absolute;
+        display: none;
+        opacity: 0;
+        /* opinions */
+        text-transform: none;
+        font-size: .9em;
+      }
+      /*the little triangle that is to the left of the tooltip */
+      [tooltip]::before {
+        content: '';
+        z-index: 1001;
+        border: 5px solid transparent;
+      }
+
+      [tooltip]::after {
+        content: attr(tooltip); /* the pseudo element should use the value of tooltip */
+        z-index: 1000;
+
+        font-family: Helvetica, sans-serif;
+        text-align: center;
+
+        /*
+        Let the content set the size of the tooltips
+        */
+        min-width: 3em;
+        max-width: 21em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        /* visible design of the tooltip bubbles */
+        padding: 1ch 1.5ch;
+        border-radius: .3ch;
+        box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+        background: #333;
+        color: #fff;
+      }
+
+      /* tooltips activated by hovering the mouse over the elment */
+      [tooltip]:hover::before,
+      [tooltip]:hover::after {
+        display: block;
+      }
+      /* tells the browser that tooltip elements that do not have flow defined, right will be default for the before attribute */
+      [tooltip]:not([flow])::before,
+      [tooltip][flow^="right"]::before {
+        top: 50%;
+        border-left-width: 0;
+        border-right-color: #333;
+        right: calc(0em - 5px);
+        transform: translate(.5em, -50%);
+      }
+      /* same as above, but for the after attribute */
+      [tooltip]:not([flow])::after,
+      [tooltip][flow^="right"]::after {
+        top: 50%;
+        left: calc(100% + 5px);
+        transform: translate(.5em, -50%);
+      }
+      /* applying keyframe animations to horizontal tooltips */
+      @keyframes tooltips-horz {
+        to {
+          opacity: .9;
+          transform: translate(0, -50%);
+        }
+      }
+      /* passing keyframes when a user hovers over the trggering elements */
+      [tooltip][flow^="right"]:hover::before,
+      [tooltip][flow^="right"]:hover::after {
+        animation:
+            tooltips-horz
+            300ms
+            ease-out
+            forwards;
+      }
     </style>
   <script src="contentScript.js"></script>
   </head>
   <body>
     <div class="popUpDiv" id="popUpDiv">
+
       <div class="values" id="_8values">
         <div class="container">
           <img src="/icons/_8values.png" id="_8img"></img>
@@ -77,20 +163,21 @@
       </div>
 
       <div class="bar"id="bar">
-        <img src="/icons/_8values.png" id="_8PopupImg"></img>
+        <span tooltip="8values test" flow="right"><img src="/icons/_8values.png" id="_8PopupImg"></img></span>
         <p></p>
-        <img src="/icons/spekr.png" id="spekrPopupImg"></img>
+        <span tooltip="spekr test" flow="right"><img src="/icons/spekr.png" id="spekrPopupImg"></img></span>
       </div>
 
-      <iframe id="_8iframe" frameborder="0">this doesnt work lol </iframe>
+      <iframe id="_8iframe" frameborder="0"></iframe>
       <div class="values" id="spekrValues">
         <div class="container">
           <img src="/icons/spekr.png" id="spekrImg"></img>
           <a href="#" id="spekrValuesClick" class="clicker"><h4>Spekr</h4></a>
         </div>
       </div>
-      <div class="bar"><p>this is a text</p></div>
-      <iframe id="spekrIframe" frameborder="0">this doesnt work lol </iframe>
+
+      <iframe id="spekrIframe" frameborder="0"></iframe>
+
     </div>
   </body>
 </html>
