@@ -10,9 +10,13 @@ img{
   vertical-align: middle;
   display: inline;
 }
-a{
+a {
+  text-decoration: none;
   display: inline-block;
   padding: 2px;
+}
+a:hover{
+  color: blue;
 }
 h4{
   display: inline-block;
@@ -28,7 +32,7 @@ h4{
   height: auto;
   min-width: 350px;
   min-height: 100px;
-  background-color: blue;
+  background-color: #A9A9A9	;
 }
 .values{
   background-color: inherit;
