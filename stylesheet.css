@@ -59,6 +59,9 @@ h4{
   position: absolute;
   overflow-y: hidden;
 }
+#screenshotPlaceHolder{
+  display: none;
+}
 /* makes sure that the tooltip is where is should be */
 [tooltip]{
   position: relative;
