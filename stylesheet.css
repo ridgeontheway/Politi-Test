@@ -19,8 +19,12 @@ a:hover{
   color: blue;
 }
 h4{
+  text-decoration: none;
   display: inline-block;
   padding: 2px;
+}
+h4:hover{
+  text-decoration: underline;
 }
 .container{
   display: table;
