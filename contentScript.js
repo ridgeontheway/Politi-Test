@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById("popUpDiv").style.width="800px";
         document.getElementById("popUpDiv").style.height="580px";
 
-
         document.getElementById("_8iframe").src='https://8values.github.io/quiz.html';
         document.getElementById("_8iframe").target="_parent";
 
