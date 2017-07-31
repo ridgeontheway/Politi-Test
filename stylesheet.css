@@ -37,6 +37,7 @@ h4:hover{
   min-width: 350px;
   min-height: 100px;
   background-color: #A9A9A9	;
+  transition: width 2s, height 4s;
 }
 .values{
   background-color: inherit;
