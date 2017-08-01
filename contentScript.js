@@ -42,21 +42,23 @@ document.addEventListener('DOMContentLoaded', function () {
       });
 
       document.getElementById("spekrPopupImg").addEventListener("click", function(){
+        /*WORKING ON THIS ONE */
         _8ValuesDisplay = false;
-        document.getElementById("_8iframe").style.visibility="hidden";
-        document.getElementById("spekrIframe").style.visibility="visible";
+        if (spekrDisplay === false){ //then the user is not wanting to re-set img
+          document.getElementById("_8iframe").style.display="none";
+          document.getElementById("bar").style.display="none";
 
-        document.getElementById("popUpDiv").style.width="500px";
-        document.getElementById("popUpDiv").style.height="580px";
+          unfade(document.getElementById("loadingContainer"));
+          document.getElementById("popUpDiv").style.width="500px";
+          document.getElementById("popUpDiv").style.height="580px";
 
-        document.getElementById("spekrIframe").src='http://spekr.org/';
-        document.getElementById("spekrIframe").target="_parent";
-
-        document.getElementById("spekrIframe").style.height="580px";
-        document.getElementById("spekrIframe").style.width="100%";
-
-        document.getElementById("bar").style.visibility="visible";
-      });
+          seconds = 1;
+          cancel = setInterval(incrementSecondsSpekrPopup, 1000);
+      }
+      else {
+          //if the user wants to re-set the test
+      }
+    });
 
       document.getElementById("spekrValuesClick").addEventListener("click", function(){
         document.getElementById("_8values").style.display="none";
@@ -139,6 +141,21 @@ function incrementSeconds8ValuesPopupReset() {
 }
 
 function incrementSecondsSpekr() {
+    seconds += 1;
+    if (seconds === 5){
+      document.getElementById("spekrIframe").style.height="580px";
+      document.getElementById("spekrIframe").style.width="100%";
+
+        fade(document.getElementById("loadingContainer"));
+        document.getElementById("spekrIframe").src='http://spekr.org/';
+        unfade(document.getElementById("spekrIframe"));
+        unfade(document.getElementById("bar"));
+        spekrDisplay = true;
+        clearInterval(cancel);
+      }
+}
+
+function incrementSecondsSpekrPopup() {
     seconds += 1;
     if (seconds === 5){
       document.getElementById("spekrIframe").style.height="580px";
