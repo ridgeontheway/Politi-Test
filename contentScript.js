@@ -1,7 +1,7 @@
 var seconds = 1;
 var cancel;
 var _8ValuesDisplay = false;
-var  spelkrDisplay = false;
+var  spekrDisplay = false;
 
 document.addEventListener('DOMContentLoaded', function () {
       document.getElementById("8valuesCLick").addEventListener("click", function(){
@@ -17,14 +17,24 @@ document.addEventListener('DOMContentLoaded', function () {
       });
 
       document.getElementById("_8PopupImg").addEventListener("click", function(){
+        spekrDisplay = false;
         if (_8ValuesDisplay === false){
           document.getElementById("spekrIframe").style.display="none";
           document.getElementById("bar").style.display="none";
 
           unfade(document.getElementById("loadingContainer"));
-          /* WORKING HERE */
           document.getElementById("popUpDiv").style.width="800px";
           document.getElementById("popUpDiv").style.height="580px";
+
+          seconds = 1;
+          cancel = setInterval(incrementSeconds8ValuesPopup, 1000);
+        }
+        else{
+          //if the user wants to re-set the test
+          document.getElementById("_8iframe").style.display="none";
+          document.getElementById("bar").style.display="none";
+
+          unfade(document.getElementById("loadingContainer"));
 
           seconds = 1;
           cancel = setInterval(incrementSeconds8ValuesPopup, 1000);
@@ -32,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
 
       document.getElementById("spekrPopupImg").addEventListener("click", function(){
+        _8ValuesDisplay = false;
         document.getElementById("_8iframe").style.visibility="hidden";
         document.getElementById("spekrIframe").style.visibility="visible";
 
@@ -106,8 +117,19 @@ function incrementSeconds8ValuesPopup() {
     if (seconds === 5){
       document.getElementById("_8iframe").style.width="100%";
       document.getElementById("_8iframe").style.height="580px";
-      document.getElementById("_8iframe").src='https://8values.github.io/quiz.html';
 
+        fade(document.getElementById("loadingContainer"));
+        document.getElementById("_8iframe").src='https://8values.github.io/quiz.html';
+        unfade(document.getElementById("_8iframe"));
+        unfade(document.getElementById("bar"));
+        _8ValuesDisplay = true;
+        clearInterval(cancel);
+      }
+}
+
+function incrementSeconds8ValuesPopupReset() {
+    seconds += 1;
+    if (seconds === 2){
         fade(document.getElementById("loadingContainer"));
         document.getElementById("_8iframe").src='https://8values.github.io/quiz.html';
         unfade(document.getElementById("_8iframe"));
@@ -126,7 +148,7 @@ function incrementSecondsSpekr() {
         document.getElementById("spekrIframe").src='http://spekr.org/';
         unfade(document.getElementById("spekrIframe"));
         unfade(document.getElementById("bar"));
-        spelkrDisplay = true;
+        spekrDisplay = true;
         clearInterval(cancel);
       }
 }
