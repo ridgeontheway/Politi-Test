@@ -2,7 +2,7 @@
 
 Politi-Test is an open-source chrome extension that allows you to take some of the most popular political tests from any web page!
 
-  <img src="/icons/fullSize.png" align="right" width="350"/>
+  <img src="/icons/fullSize.png" align="right" width="350" height="350"/>
 
 ### Prerequisites
 
