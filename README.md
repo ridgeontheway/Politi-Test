@@ -1,6 +1,6 @@
 # Politi-Test
 
-Politi-Test is an open-source chrome extension that allows you to take some of the most popular political tests from any webpage!
+Politi-Test is an open-source chrome extension that allows you to take some of the most popular political tests from any web page!
 
 ### Prerequisites
 In order to use Politi-Test you will need:
@@ -9,7 +9,7 @@ In order to use Politi-Test you will need:
 2. A persistent internet connection
 
 ### Installing through github
-In order to manually download the extension through github:
+In order to manually download the extension through github
 ```
 1. Download the extension by clicking the "clone or download" button at the top of this page.
 2. Once downloaded, unzip the folder.
@@ -19,12 +19,7 @@ In order to manually download the extension through github:
 
 ```
 ### Installing through the chrome extensions store
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+Goto the [Chrome web store page](TBD) and click "Add To Chrome"
 
 ## Built With
 
