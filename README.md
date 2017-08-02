@@ -7,7 +7,8 @@ Politi-Test is an open-source chrome extension that allows you to take some of t
 In order to use Politi-Test you will need:
 
 ```
-1. <a href=https://www.google.com/chrome/browser/desktop/index.html>Google Chrome</a>
+1. [Google Chrome](https://www.google.com/chrome/browser/desktop/index.html)
+
 ```
 
 ## Installing through github
