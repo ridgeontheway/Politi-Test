@@ -4,10 +4,10 @@ Politi-Test is an open-source chrome extension that allows you to take some of t
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+In order to use Politi-Test you will need:
 
 ```
-Give examples
+1. <a href=https://www.google.com/chrome/browser/desktop/index.html>Google Chrome</a>
 ```
 
 ## Installing through github
