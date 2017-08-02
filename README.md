@@ -3,12 +3,14 @@
 Politi-Test is an open-source chrome extension that allows you to take some of the most popular political tests from any web page!
 
 ### Prerequisites
+
 In order to use Politi-Test you will need:
 
 1. [Google Chrome](https://www.google.com/chrome/browser/desktop/index.html)
 2. A persistent internet connection
 
 ### Installing through github
+
 In order to manually download the extension through github
 ```
 1. Download the extension by clicking the "clone or download" button at the top of this page.
@@ -19,6 +21,7 @@ In order to manually download the extension through github
 
 ```
 ### Installing through the chrome extensions store
+
 - Goto the [Chrome web store page](TBD) and click "Add To Chrome"
 
 ## Built With
@@ -29,13 +32,12 @@ In order to manually download the extension through github
 * HTML - Used to make the extension popup
 
 ## Contributing
-Please contact <a href="mailto:george.ridgway@protonmail.com">my email</a> for more information
+
+Please contact me through<a href="mailto:george.ridgway@protonmail.com">my email</a> for more information
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **George Ridgway** - [Github](https://github.com/ridgeontheway)
 
 ## License
 
