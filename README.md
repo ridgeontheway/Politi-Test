@@ -5,7 +5,6 @@ Politi-Test is an open-source chrome extension that allows you to take some of t
 <div id="wrapper" align="center">
   <img src="/icons/fullSize.png" width="350" height="350"/>
 </div>
-
 ### Prerequisites
 
 In order to use Politi-Test you will need:
