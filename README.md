@@ -8,8 +8,9 @@ Politi-Test is an open-source chrome extension that allows you to take some of t
 ### Installing through github
 In order to manually download the extension through github:
 ```
-Download the extension by clicking the "clone or download" button at the top of this page
-Once downloaded, unzip the folder
+1. Download the extension by clicking the "clone or download" button at the top of this page.
+2. Once downloaded, unzip the folder.
+3.
 
 ```
 ### Installing through the chrome extensions store
