@@ -10,7 +10,10 @@ In order to manually download the extension through github:
 ```
 1. Download the extension by clicking the "clone or download" button at the top of this page.
 2. Once downloaded, unzip the folder.
-3.
+3. Open the chrome browser, go to the top right and click on "Customize and Control Google Chrome".
+4. In the drop-down menu, hover over "more tools", then click on extensions.
+5. Click on the "load unpacked extension" button, and select the un-zipped folder that we created in step 2.
+6. Success! You have successfully installed Politi-Test :) 
 
 ```
 ### Installing through the chrome extensions store
