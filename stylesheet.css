@@ -1,6 +1,7 @@
+/* Styles for basic HTML elements (body, p, etc) */
 body{
   background-color: #A9A9A9	;
-  margin: 0px !important;
+  margin: 0px !important; /* reduces the chrome margin to the lowest it can go */
   border-radius: 5px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
@@ -27,8 +28,23 @@ h4{
 h4:hover{
   text-decoration: underline;
 }
+h3{
+  text-align: center;
+  color:white;
+}
 
-.offlineBox{
+/* Styles for Classes */
+
+/* Dealing with the popup itself */
+.popUpDiv{
+  width: 350px;
+  height: 50px;
+  background-color: inherit;
+  transition: width 2s, height 3s;
+}
+
+/* Dealing with the offline message */
+.offlineBox{ /* deals with the offline message box */
   text-indent: -1000em;
   width: 0px;
   height:0px;
@@ -40,28 +56,20 @@ h4:hover{
   background-color: #f25a41;
   margin: auto;
 }
-h3{
-  text-align: center;
-  color:white;
-}
-.offlineContainer{
+.offlineContainer{ /* container that holds the offline message */
   width: 0px;
   height: 0px;
   background-color: #A9A9A9	;
 }
 
-.container{
-  display: table;
-  margin-right: auto;
-  margin-left: auto;
-}
-.loadingContainer{
+/* Dealing with the loading circle */
+.loadingContainer{ /*contianer for the loading circle */
   display: none;
   background-color: #A9A9A9;
   overflow: hidden;
   z-index: 1;
 }
-.loading{
+.loading{ /* the loading circle */
   width: 80px;
   height: 80px;
   border: 2px solid #f3f3f3;
@@ -75,30 +83,32 @@ h3{
   margin: auto;
 
   animation: spin 1s infinite linear;
-
 }
-@keyframes spin {
+@keyframes spin { /* animation that the loading circle uses */
     from {
       transform: rotate(0deg);
     }to{
       transform: rotate(360deg);
     }
 }
-.popUpDiv{
-  width: 350px;
-  height: 50px;
-  background-color: inherit;
-  transition: width 2s, height 3s;
-}
-.values{
+
+/* Dealing with the main menu */
+.values{ /* Container for the menu */
   background-color: inherit;
   width: 100%;
   height: 100%;
 }
-.clicker{
+.container{ /* Smaller container, holds the imgs and a tags */
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
+.clicker{ /* What the user clicks on, in the main menu, to take a test */
   color: white;
   background-color: inherit;
 }
+
+/* Deals with the overley bar */
 .bar{
   position: absolute;
   display: none;
@@ -107,21 +117,22 @@ h3{
   opacity: 0.9;
   z-index: 2;
 }
-#_8iframe {
+
+/* Deals with the tests */
+#_8iframe { /* 8values test */
   width: 0px;
   height: 0px;
   position: absolute;
   overflow-y: hidden;
 }
-#spekrIframe {
+#spekrIframe { /* spekr test */
   width: 0px;
   height: 0px;
   position: absolute;
   overflow-y: hidden;
 }
-#screenshotPlaceHolder{
-  display: none;
-}
+
+/* Deals with the tooltip thats appears over the overlay bar  */
 /* makes sure that the tooltip is where is should be */
 [tooltip]{
   position: relative;
