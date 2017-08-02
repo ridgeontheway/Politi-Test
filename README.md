@@ -19,17 +19,17 @@ In order to manually download the extension through github
 
 ```
 ### Installing through the chrome extensions store
-Goto the [Chrome web store page](TBD) and click "Add To Chrome"
+- Goto the [Chrome web store page](TBD) and click "Add To Chrome"
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* CSS - Used to style and animate the extension
+* JavaScript - Managed onclick events
+* JSON - Required to pass information about the extension to the browser
+* HTML - Used to make the extension popup
 
 ## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please contact <a href="mailto:george.ridgway@protonmail.com">my email</a> for more information
 
 ## Authors
 
