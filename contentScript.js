@@ -94,8 +94,8 @@ function showOffline(){
     document.getElementById("offlineBox").style.textIndent = "0em";
   }
   else{
-    document.getElementById("offlineBox").style.height="30%";
-    document.getElementById("offlineBox").style.width="50%";
+    document.getElementById("offlineBox").style.height="15%";
+    document.getElementById("offlineBox").style.width="70%";
     document.getElementById("offlineBox").style.textIndent = "0em";
   }
 }
