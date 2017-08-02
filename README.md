@@ -22,7 +22,7 @@ In order to manually download the extension through github:
 5. Click on the "load unpacked extension" button, and select the un-zipped folder that we created in step 2
 
 ```
-### Installing through the chrome extensions store
+### Installing through the chrome web store
 
 - Goto the [Chrome web store page](TBD) and click "Add To Chrome".
 
