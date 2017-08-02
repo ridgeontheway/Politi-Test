@@ -81,7 +81,23 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function showOffline(){
+  var divsToHide = document.getElementsByClassName("hideable"); //divsToHide is an array
+  for(var i = 0; i < divsToHide.length; i++){
+      divsToHide[i].style.display = "none"; // depending on what you're doing
+  }
+  document.getElementById("offlineContainer").style.width="100%";
+  document.getElementById("offlineContainer").style.height="100%";
 
+  if(_8ValuesDisplay === true){
+    document.getElementById("offlineBox").style.height="15%";
+    document.getElementById("offlineBox").style.width="45%";
+    document.getElementById("offlineBox").style.textIndent = "0em";
+  }
+  else{
+    document.getElementById("offlineBox").style.height="30%";
+    document.getElementById("offlineBox").style.width="50%";
+    document.getElementById("offlineBox").style.textIndent = "0em";
+  }
 }
 
 function fadeOut(element) {
