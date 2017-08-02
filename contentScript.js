@@ -4,6 +4,7 @@ var _8ValuesDisplay = false;
 var  spekrDisplay = false;
 
 document.addEventListener('DOMContentLoaded', function () {
+      window.addEventListener('offline',showOffline);
       document.getElementById("8valuesCLick").addEventListener("click", function(){
         document.getElementById("_8values").style.display="none";
         document.getElementById("spekrValues").style.display="none";
@@ -79,6 +80,10 @@ document.addEventListener('DOMContentLoaded', function () {
       });
 });
 
+function showOffline(){
+
+}
+
 function fadeOut(element) {
     var op = 1;  // initial opacity
     var timer = setInterval(function () {
@@ -107,7 +112,7 @@ function fadeIn(element) {
 
 function incrementSeconds8Values() {
     seconds += 1;
-    if (seconds === 5){
+    if (seconds === 4){
         document.getElementById("_8iframe").style.width="100%";
         document.getElementById("_8iframe").style.height="580px";
 
@@ -122,7 +127,7 @@ function incrementSeconds8Values() {
 
 function incrementSeconds8ValuesPopup() {
     seconds += 1;
-    if (seconds === 5){
+    if (seconds === 3){
       document.getElementById("_8iframe").style.width="100%";
       document.getElementById("_8iframe").style.height="580px";
 
@@ -148,7 +153,7 @@ function incrementSeconds8ValuesPopupReset() {
 
 function incrementSecondsSpekr() {
     seconds += 1;
-    if (seconds === 5){
+    if (seconds === 4){
       document.getElementById("spekrIframe").style.height="580px";
       document.getElementById("spekrIframe").style.width="100%";
 
@@ -174,7 +179,7 @@ function incrementSecondsSpekrPopupReset() {
 
 function incrementSecondsSpekrPopup() {
     seconds += 1;
-    if (seconds === 5){
+    if (seconds === 3){
       document.getElementById("spekrIframe").style.height="580px";
       document.getElementById("spekrIframe").style.width="100%";
 
