@@ -7,6 +7,7 @@ Politi-Test is an open-source chrome extension that allows you to take some of t
 In order to use Politi-Test you will need:
 
 1. [Google Chrome](https://www.google.com/chrome/browser/desktop/index.html)
+2. A persistent internet connection
 
 ## Installing through github
 
