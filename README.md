@@ -24,7 +24,7 @@ In order to manually download the extension through github:
 ```
 ### Installing through the chrome web store
 
-- Goto the [Chrome web store page](TBD) and click "Add To Chrome".
+- Goto the [Chrome web store page](TBD) and click "Add To Chrome"
 
 ## Built With
 
@@ -57,3 +57,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * The Politi-Test icon was developed by, and purchased from [Made by Made](https://thenounproject.com/made.somewhere/)
 * 8values' icon was taken from the project's [github page](https://github.com/8values/8values.github.io)
 * Spekr's icon was taken from the designer's [blog](http://anaarkei.me/)
+* I used Jase Smith's [blog](https://webdesign.tutsplus.com/tutorials/css-tooltip-magic--cms-28082) to learn how to make CSS tooltips
+* I used smashtheshell's [video](https://webdesign.tutsplus.com/tutorials/css-tooltip-magic--cms-28082) to learn how to make a pure CSS loading circle
