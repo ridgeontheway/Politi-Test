@@ -8,33 +8,40 @@
   <body>
     <div class="popUpDiv" id="popUpDiv">
 
-      <div class="loadingContainer" id="loadingContainer">
+<div class="offlineContainer" id="offlineContainer">
+      <div class="offlineBox" id="offlineBox">
+        <h3>You have just disconnected from the internet!</h3>
+        <h3>Please reconnect, and relaunch...</h3>
+      </div>
+</div>
+
+      <div class="loadingContainer" id="loadingContainer" class="hideable">
         <div class="loading"></div>
       </div>
 
-      <div class="values" id="_8values">
+      <div class="values" id="_8values" class="hideable">
         <div class="container">
         <img src="/icons/_8values.png" id="_8img"></img>
         <span><a href="#" id="8valuesCLick" class="clicker"><h4>8values</h4></a></span>
         </div>
       </div>
 
-      <div class="bar"id="bar">
-        <span tooltip="8values test" flow="right"><img src="/icons/_8values.png" id="_8PopupImg"></img></span>
+      <div class="bar"id="bar" class="hideable">
+        <span tooltip="8values test" flow="right"><img src="/icons/_8values.png" id="_8PopupImg" class="hideable"></img></span>
         <p></p>
-        <span tooltip="spekr test" flow="right"><img src="/icons/spekr.png" id="spekrPopupImg"></img></span>
+        <span tooltip="spekr test" flow="right"><img src="/icons/spekr.png" id="spekrPopupImg" class="hideable"></img></span>
       </div>
 
-      <iframe id="_8iframe" frameborder="0"></iframe>
+      <iframe id="_8iframe" frameborder="0" class="hideable"></iframe>
 
-      <div class="values" id="spekrValues">
+      <div class="values" id="spekrValues" class="hideable">
         <div class="container">
           <img src="/icons/spekr.png" id="spekrImg"></img>
             <span><a href="#" id="spekrValuesClick" class="clicker"><h4>Spekr</h4></a></span>
         </div>
       </div>
 
-      <iframe id="spekrIframe" frameborder="0"></iframe>
+      <iframe id="spekrIframe" frameborder="0" class="hideable"></iframe>
 
     </div>
   </body>

@@ -27,6 +27,29 @@ h4{
 h4:hover{
   text-decoration: underline;
 }
+
+.offlineBox{
+  text-indent: -1000em;
+  width: 0px;
+  height:0px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f25a41;
+  margin: auto;
+}
+h3{
+  text-align: center;
+  color:white;
+}
+.offlineContainer{
+  width: 0px;
+  height: 0px;
+  background-color: #A9A9A9	;
+}
+
 .container{
   display: table;
   margin-right: auto;
