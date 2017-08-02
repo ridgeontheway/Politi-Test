@@ -58,4 +58,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * 8values' icon was taken from the project's [github page](https://github.com/8values/8values.github.io)
 * Spekr's icon was taken from the designer's [blog](http://anaarkei.me/)
 * I used Jase Smith's [blog](https://webdesign.tutsplus.com/tutorials/css-tooltip-magic--cms-28082) to learn how to make CSS tooltips
-* I used smashtheshell's [video](https://webdesign.tutsplus.com/tutorials/css-tooltip-magic--cms-28082) to learn how to make a pure CSS loading circle
+* I used smashtheshell's [video](https://www.youtube.com/watch?v=67_DXhS3_Hc) to learn how to make a pure CSS loading circle
