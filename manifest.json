@@ -1,8 +1,8 @@
 {
-  "name": "politi-test",
+  "name": "Politi-Test",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "Chrome extension that allows you to test your political ideology.",
+  "description": "Politi-Test is an open-source chrome extension that allows you to take some of the most popular political tests from any web page!",
   "browser_action": {
   "default_popup": "popup.html"
   },

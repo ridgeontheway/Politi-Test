@@ -35,6 +35,13 @@ In order to manually download the extension through github:
 
 Please contact me through<a href="mailto:george.ridgway@protonmail.com"> my email</a> for more information
 
+## The tests
+
+Please note that I take no credit for creating the political tests themselves, you can find the tests individually here:
+
+* Spekr - [Website](http://spekr.org/)
+* 8values - [Website](https://8values.github.io/)
+
 ## Authors
 
 * **George Ridgway** - *Main Developer* - [Github](https://github.com/ridgeontheway)
@@ -45,6 +52,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* The Politi-Test icon was developed by [Made by Made](https://thenounproject.com/made.somewhere/) and was purchased using the creative commons license
-* 
-* etc
+* The Politi-Test icon was developed by, and purchased from [Made by Made](https://thenounproject.com/made.somewhere/)
+* 8values' icon was taken from the project's [github page](https://github.com/8values/8values.github.io)
+* Spekr's icon was taken from the designer's [blog](http://anaarkei.me/)
