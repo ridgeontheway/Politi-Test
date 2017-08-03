@@ -14,17 +14,20 @@ In order to use Politi-Test you will need:
 ### Installing through github
 
 In order to manually download the extension through github:
+
 ```
 1. Download the extension by clicking the "clone or download" button at the top of this page
 2. Once downloaded, unzip the folder
 3. Open the chrome browser, go to the top right and click on "Customize and Control Google Chrome"
 4. In the drop-down menu, hover over "more tools", then click on extensions
-5. Click on the "load unpacked extension" button, and select the un-zipped folder that we created in step 2
+5. Enable Developer Mode (if not done so already)
+6. Click on the "load unpacked extension" button, and select the un-zipped folder that we created in step 
 
 ```
+
 ### Installing through the chrome web store
 
-- Goto the [Chrome web store page](TBD) and click "Add To Chrome"
+- Goto the [Chrome web store page](https://chrome.google.com/webstore/detail/politi-test/oogoiocmamfibfmgkiaoalimlpofbgfd) and click "Add To Chrome"
 
 ## Built With
 
