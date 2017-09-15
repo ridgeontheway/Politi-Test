@@ -21,7 +21,7 @@ In order to manually download the extension through github:
 3. Open the chrome browser, go to the top right and click on "Customize and Control Google Chrome"
 4. In the drop-down menu, hover over "more tools", then click on extensions
 5. Enable Developer Mode (if not done so already)
-6. Click on the "load unpacked extension" button, and select the un-zipped folder that we created in step 
+6. Click on the "load unpacked extension" button, and select the un-zipped folder that we created in step 1
 
 ```
 
